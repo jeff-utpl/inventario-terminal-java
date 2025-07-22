@@ -1,0 +1,36 @@
+# Archivos compilados
+*.class
+
+# Carpetas de salida (NetBeans, IntelliJ, Eclipse)
+/out/
+/bin/
+/build/
+target/
+
+# Configuraciones de IDE
+*.iml
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Archivos de sistema (Windows / macOS / Linux)
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+*.tmp
+
+# Archivos generados
+*.jar
+*.war
+
+# Archivos de entrada/salida si usas redirección
+*.txt
+
+# Repositorios Maven/Gradle (si más adelante integras)
+.mvn/
+.gradle/
+
