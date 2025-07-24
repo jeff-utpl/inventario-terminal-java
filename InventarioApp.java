@@ -1,4 +1,5 @@
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class InventarioApp {
@@ -13,10 +14,13 @@ public class InventarioApp {
         System.out.println("Producto registrado.");
         producto.mostrar();
         scanner.close();
-
-        FileWriter escritor = new FileWriter("inventario.txt, true");
-        escritor.write(nombre + " -$" + precio + "\n");
-        escritor.close();
-
+        
+        try {
+            FileWriter escritor = new FileWriter("inventario.txt, true");
+            escritor.write(nombre + " -$" + precio + "\n");
+            escritor.close();
+        } catch (IOException e) {
+            System.out.println(" Error al escribir en archivo: " + e.getMessage());
+        }
     }
 }
