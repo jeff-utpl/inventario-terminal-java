@@ -9,6 +9,10 @@ public class InventarioApp {
         String nombre = scanner.nextLine();
         System.out.println("Precio: ");
         double precio = scanner.nextDouble();
+        if(precio < 0){
+            System.out.println("El precio debe ser mayor a 0.");
+            return;
+        }
         Producto producto = new Producto(nombre, precio);
         System.out.println("Producto registrado.");
         producto.mostrar();
