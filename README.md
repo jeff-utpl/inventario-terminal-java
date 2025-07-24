@@ -20,3 +20,12 @@ Compilación y ejecución sin IDE:
 ```bash
 javac Main.java
 java Main
+inventario-java/
+│
+├── src/
+│   ├── interfaz/
+│   ├── validacion/
+│   └── persistencia/
+│
+├── inventario.txt
+└── README.md
