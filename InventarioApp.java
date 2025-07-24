@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class InventarioApp {
     public static void main(String[] args){
-        System.out.println("Bienvenido al sistema de inventario interactivo");
+        System.out.println("Bienvenido al sistema de inventario interactivo mejorado por capas.");
+        System.out.println("--------------------------------------------------------------------");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nombre del producto: ");
         String nombre = scanner.nextLine();
