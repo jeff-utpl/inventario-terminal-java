@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 import java.util.Scanner;
 
 public class InventarioApp {
@@ -12,6 +13,10 @@ public class InventarioApp {
         System.out.println("Producto registrado.");
         producto.mostrar();
         scanner.close();
+
+        FileWriter escritor = new FileWriter("inventario.txt, true");
+        escritor.write(nombre + " -$" + precio + "\n");
+        escritor.close();
 
     }
 }
