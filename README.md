@@ -1,13 +1,22 @@
-# 📦 Inventario Terminal en Java
+# 📦 Inventario por Consola en Java
 
-Mini sistema interactivo que registra productos desde consola usando Java puro.
+## 🧾 Descripción
+Aplicación modular para gestión de inventario en Java SE, ejecutada desde consola y con persistencia en archivos. Simula buenas prácticas en desarrollo backend y control de versiones.
 
-## ✅ Características
-- Entrada por teclado (`Scanner`)
-- Clase `Producto` con atributos y método `mostrar()`
-- Compilación y ejecución desde terminal (`javac`, `java`)
+## 🔍 Funcionalidades
+- Registro, consulta y edición de productos
+- Interacción por consola (CLI)
+- Guardado automático en archivo `.txt`
+- Simulación de ramas de flujo: `interfaz`, `validacion`, `persistencia`
 
-## 🚀 Cómo usar
+## 🛠️ Tecnologías
+- Java SE
+- Git & GitHub
+- Terminal (CLI)
+- Control de versiones con ramas
+
+## 🚀 Ejecución
+Compilación y ejecución sin IDE:
 ```bash
-javac Producto.java InventarioApp.java
-java InventarioApp
+javac Main.java
+java Main
